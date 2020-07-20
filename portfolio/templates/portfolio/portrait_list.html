@@ -1,0 +1,14 @@
+{% extends "portfolio/main.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="container">
+        <h2 style="font-weight: bold">{% trans Portrait photography %}</h2>
+    </div>
+    <div>
+        {% for p in portraits %}
+        <div class="container" style="margin-bottom:35px">
+            <img src="{{ p.photo.url }}">
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-02 00:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: communication/models.py:7
+msgid "Your name"
+msgstr "Nombre"
+
+#: communication/models.py:8
+msgid "Your email"
+msgstr "Correo electrónico"
+
+#: communication/models.py:9
+msgid "Text"
+msgstr "Texto"
+
+#: communication/models.py:27
+msgid "Phone"
+msgstr "Teléfono"
+
+#: communication/templates/communication/contacts.html:9
+msgid "Get in touch"
+msgstr "Ponerse en contacto"
+
+#: communication/templates/communication/contacts.html:19
+#: communication/templates/communication/review_add.html:19
+msgid "Submit"
+msgstr "Enviar"
+
+#: communication/templates/communication/review_add.html:9
+#: communication/templates/communication/review_list.html:8
+msgid "Add a review"
+msgstr "Agregar una reseña"
+
+#: communication/templates/communication/review_list.html:5
+#: portfolio/templates/portfolio/main.html:110
+msgid "Reviews"
+msgstr "Reseñas"
+
+#: communication/templates/communication/review_list.html:25
+msgid "First"
+msgstr "Primera"
+
+#: communication/templates/communication/review_list.html:26
+msgid "Previous"
+msgstr "Previa"
+
+#: communication/templates/communication/review_list.html:36
+msgid "Next"
+msgstr "Siguente"
+
+#: communication/templates/communication/review_list.html:37
+msgid "Last"
+msgstr "Última"
+
+#: communication/views.py:22
+msgid "Your review has been added. Thank you!"
+msgstr "Su comentario ha sido agregado."
+
+#: communication/views.py:30
+msgid ""
+"Your message has been sent. We will get in touch with you as soon as "
+"possible. Thank you!"
+msgstr ""
+"Tu mensaje ha sido enviado. Nos pondremos en contacto con usted lo antes posible. "
+"¡Gracias!"
+
+#: photo_project/settings.py:129
+msgid "Russian"
+msgstr "Ruso"
+
+#: photo_project/settings.py:130
+msgid "English"
+msgstr "Inglés"
+
+#: photo_project/settings.py:131
+msgid "Spanish"
+msgstr "Español"
+
+#: portfolio/templates/portfolio/about.html:9
+msgid ""
+"It is some info about a marvelous photographer(me), who is ready to grab "
+"your money and do a click-click with his camera"
+msgstr ""
+"Es información sobre un maravilloso fotógrafo (yo), que está listo para "
+"tomar tu dinero y haz click-click con su cámara"
+
+#: portfolio/templates/portfolio/main.html:7
+msgid "A portfolio site of a photographer"
+msgstr "Un sitio de portafolio de un fotógrafo."
+
+#: portfolio/templates/portfolio/main.html:107
+msgid "Home"
+msgstr "Inicio"
+
+#: portfolio/templates/portfolio/main.html:108
+msgid "About/services/prices"
+msgstr "Sobre mi / servicios / precios"
+
+#: portfolio/templates/portfolio/main.html:109
+msgid "Contacts"
+msgstr "Contactos"
+
+#: portfolio/templates/portfolio/main.html:112
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: portfolio/templates/portfolio/main.html:114
+msgid "Street"
+msgstr "Street"
+
+#: portfolio/templates/portfolio/main.html:115
+msgid "Wedding"
+msgstr "Foto de boda"
+
+#: portfolio/templates/portfolio/main.html:116
+msgid "Portraits"
+msgstr "Retratos"
+
+#~ msgid "Opinions"
+#~ msgstr "Opiniones"
