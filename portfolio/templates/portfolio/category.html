@@ -1,0 +1,15 @@
+{% extends "portfolio/main.html" %}
+{% load i18n %}
+{% load mptt_tags %}
+{% block content %}
+    <div class="container">
+        <h2 style="font-weight: bold">{{ category.name }}</h2>
+    </div>
+    <div>
+        {% for photo in category.get_photos %}
+            <div class="container" style="margin-bottom:35px">
+                <img src="{{ photo.image.url }}">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

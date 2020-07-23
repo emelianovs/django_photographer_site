@@ -1,7 +1,9 @@
-from django.shortcuts import render
-from django.views.generic import ListView
+from django.shortcuts import render, Http404
+#from django.views.generic import ListView
 
-from .models import Street, Wedding, Portrait, Carousel
+#from .models import Street, Wedding, Portrait, Carousel
+from .models import Carousel, Category
+
 
 
 def home(request):
@@ -13,7 +15,20 @@ def about(request):
     return render(request, 'portfolio/about.html')
 
 
-class StreetGallery(ListView):
+def category(request, path, instance):
+    if instance is None:
+        raise Http404
+
+    return render(
+        request,
+        'portfolio/category.html',
+        {
+            'category': instance,
+        }
+    )
+
+
+'''class StreetGallery(ListView):
     model = Street
     context_object_name = 'streets'
 
@@ -26,3 +41,4 @@ class WeddingGallery(ListView):
 class PortraitGallery(ListView):
     model = Portrait
     context_object_name = 'portraits'
+    '''
