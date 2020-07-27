@@ -113,10 +113,11 @@
 								<li class="sub-menu">
 									<a href="javascript:void(0);" >{% trans "Portfolio" %}</a>
 									<ul>
-										<li><a href="#" >{% trans "Street" %}</a></li>
-										<li><a href="#" >{% trans "Wedding" %}</a></li>
-										<li><a href="#" >{% trans "Portraits" %}</a></li>
+										{% for category in categories %}
+											<li><a href="{{ category.get_absolute_url }}" >{{ category }}</a></li>
+										{% endfor %}
 									</ul>
+
 
 								{% get_current_language as LANGUAGE_CODE %}
 								{% get_available_languages as LANGUAGES %}
@@ -126,7 +127,7 @@
 										<a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
 									   class="{% if language.code == LANGUAGE_CODE %}selected{% endif %}"
 									   lang="{{ language.code }}">
-										<img src="/static/portfolio/images/flags/{{ language.code }}.png" alt="{{ language.code }}" height="100">
+										<img src="/static/portfolio/images/flags/{{ language.code }}.png" alt="{{ language.code }}" height="10">
 										<!-- <img src="{%static 'portfolio/images/flags/{{ language.code }}.png' %}" alt="{{ language.code }}" height="30"> -->
 										</a>
 									</li>
